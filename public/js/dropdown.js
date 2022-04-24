@@ -1,4 +1,4 @@
-const mainNav = document.getElementById("main-nav");
+const arrowIcon = document.getElementsByClassName("arrow-icon");
 const opt = document.getElementsByClassName("subnav");
 
 Object.keys(opt).forEach((option) => {
@@ -7,8 +7,10 @@ Object.keys(opt).forEach((option) => {
 
 const displaySubOpts = (o) => {
   opt[o].style.display = "block";
+  arrowIcon[o].setAttribute('d', 'm1 5 4-4 4 4');
 };
 
 const hideSubOpts = (o) => {
   opt[o].style.display = "none";
+  arrowIcon[o].setAttribute('d', 'm1 1 4 4 4-4');
 };
