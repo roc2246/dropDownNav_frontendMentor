@@ -15,6 +15,12 @@ nav>svg {
     flex-direction: row;
 }
 
+.subnav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
 li {
     margin-left: 40px;
 }
