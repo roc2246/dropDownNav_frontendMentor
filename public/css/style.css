@@ -1,0 +1,29 @@
+/*Navigation*/
+nav{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+nav>svg {
+    margin-top: 15px;
+}
+
+#main-nav, #login-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin-left: 40px;
+}
+
+#login-nav {
+    margin-left: auto;
+}
+
+/*Main Content*/
+body{
+    text-decoration: none;
+}
