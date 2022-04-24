@@ -23,15 +23,22 @@ nav {
   list-style: none;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  z-index: 1;
 
   border: outset;
   border-width: thin;
   border-radius: 12px;
+  background-color: white;
 
   margin-top: 20px;
 
   padding: 10px 20px 10px 5px;
 
+}
+
+li>svg {
+  margin-right: 15px;
 }
 
 .subnav > li {
