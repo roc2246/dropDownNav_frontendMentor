@@ -26,4 +26,27 @@ li {
 /*Main Content*/
 body{
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#left-content {
+    width: 50%;
+    height: 50%;
+}
+
+img{
+    width: 25%;
+    height: 25%;
+}
+
+/*footer*/
+.attribution {
+    margin-top: 25px;
 }
