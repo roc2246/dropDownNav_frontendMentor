@@ -1,58 +1,71 @@
 /*Navigation*/
-nav{
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
+nav {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
 }
 
-nav>svg {
-    margin-top: 15px;
+nav > svg {
+  margin-top: 15px;
 }
 
-#main-nav, #login-nav{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+#main-nav,
+#login-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
 }
 
-.subnav{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
+.subnav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 li {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 #login-nav {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 /*Main Content*/
-body{
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+body {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 1440px;
 }
 
-h1{
-    font-family: Arial, Helvetica, sans-serif;
+@media only screen and (max-width: 375px) {
+  body {
+    max-width: 375px;
+  }
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 18px;
 }
 
 #left-content {
-    width: 50%;
-    height: 50%;
+  width: 50%;
+  height: 50%;
 }
 
-img{
-    width: 25%;
-    height: 25%;
+img {
+  width: 25%;
+  height: 25%;
 }
 
 /*footer*/
 .attribution {
-    margin-top: 25px;
+  margin-top: 25px;
 }
