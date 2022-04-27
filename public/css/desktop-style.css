@@ -120,10 +120,14 @@ button:hover {
 }
 
 #left-content,
-img {
+#desktopHero{
   width: 40%;
   height: 40%;
   margin: auto;
+}
+
+#mobileHero {
+  display: none;
 }
 
 @media only screen and (max-width: 375px) {

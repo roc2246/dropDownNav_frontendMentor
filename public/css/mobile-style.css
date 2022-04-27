@@ -1,8 +1,71 @@
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 390px) {
   /*Whole Content*/
-  html {
-    max-width: 375px;
+  html{
+    width: 390px;
+    height: 0px;
   }
 
   /*Navigation*/
+  nav {
+    display: none;
+  }
+
+  /*Main Content*/
+  #main-content-flex{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #mobileHero {
+    display: block;
+    width: 175px;
+    height: 135px;
+  }
+
+  #left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    width: 175px;
+  }
+  
+  #blurb {
+    margin-top: 0px;
+    text-align: center;
+    line-height: 1.5em;
+
+    font-size: 12px;
+    width: 175px;
+  }
+
+  button{
+    margin-top: 10px;
+  }
+
+  #businesses {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 175px;
+  }
+
+  #businesses>svg{
+    margin: 10px;
+  }
+
+  #desktopHero {
+    display: none;
+  }
+
+  /*Footer*/
+  .attribution{
+    display: none;
+  }
 }
