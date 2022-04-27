@@ -6,12 +6,36 @@
 
   /*Navigation*/
   nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #main-nav {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #main-nav > li {
     display: none;
   }
 
+  #main-nav > #site-logo {
+    display: inline-block;
+    margin: 0px;
+  }
+
+  #login-sect {
+    display: none;
+  }
+
+  #mobile-nav {
+    display: block;
+    margin-left: auto;
+  }
+
   /*Main Content*/
-  #main-content-flex{
-    margin-top: 80px;
+  #main-content-flex {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +58,7 @@
     font-size: 35px;
     width: 310px;
   }
-  
+
   #blurb {
     margin-top: 0px;
     width: 350px;
@@ -42,18 +66,17 @@
     line-height: 1.5em;
   }
 
-  button{
+  button {
     margin-top: 10px;
   }
 
   #businesses {
     margin-top: 50px;
-    display: flex;
-    flex-direction: row;
   }
 
-  #businesses>svg{
-    margin: 10px;
+  #businesses > svg {
+    margin: 2px;
+    
   }
 
   #desktopHero {
@@ -61,7 +84,7 @@
   }
 
   /*Footer*/
-  .attribution{
+  .attribution {
     display: none;
   }
 }
