@@ -17,34 +17,32 @@ nav {
   flex-direction: row;
   justify-content: true;
   justify-content: false; }
-  nav svg {
-    z-index: 1; }
   nav ul {
     list-style: none;
     margin-top: 0;
     display: flex;
     flex-direction: row;
     justify-content: true;
-    justify-content: space-between; }
+    justify-content: false; }
     nav ul li {
-      margin-left: 2.5rem; }
+      margin-left: 1rem;
+      margin-right: 1rem; }
   nav #main-nav .subnav {
     display: flex;
     flex-direction: column;
-    column-gap: true;
-    column-gap: false;
     border: outset;
     border-width: thin;
     border-radius: 0.75rem;
     background-color: white;
-    padding: 1rem;
     margin-top: 1rem;
+    padding: 0.5rem;
     position: absolute;
     z-index: 1; }
-    nav #main-nav .subnav svg {
-      margin-right: 0.25rem; }
     nav #main-nav .subnav li {
-      margin: 0.5rem; }
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem; }
+      nav #main-nav .subnav li svg {
+        margin-right: 0.5rem; }
   nav #login-sect {
     margin-left: auto; }
     nav #login-sect #register {
@@ -65,50 +63,41 @@ body {
   text-decoration: none; }
 
 #main-content-flex {
-  margin-top: 5rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: true;
   justify-content: space-evenly; }
-
-#left-content {
-  display: flex;
-  flex-direction: column;
-  column-gap: true;
-  column-gap: false; }
-
-h1 {
-  font-size: 5rem; }
-
-#blurb {
-  width: 25rem; }
-
-button {
-  width: 12.5rem;
-  height: 3.125rem;
-  border-radius: 0.75rem;
-  background-color: black;
-  color: white;
-  margin-top: 1.875rem;
-  font-weight: bolder; }
-
-button:hover {
-  background-color: white;
-  color: black; }
-
-#businesses {
-  display: flex;
-  flex-direction: row;
-  justify-content: true;
-  justify-content: space-evenly;
-  margin-top: 2.625rem; }
-
-#desktopHero {
-  width: 30%;
-  height: auto; }
-
-#mobileHero {
-  display: none; }
+  #main-content-flex #left-content {
+    display: flex;
+    flex-direction: column; }
+    #main-content-flex #left-content h1 {
+      font-size: 5rem; }
+    #main-content-flex #left-content #blurb {
+      width: 25rem; }
+    #main-content-flex #left-content button {
+      width: 12.5rem;
+      height: 3.125rem;
+      border: outset;
+      border-width: thin;
+      border-radius: 0.75rem;
+      background-color: black;
+      color: white;
+      margin-top: 3rem;
+      font-weight: bolder; }
+      #main-content-flex #left-content button:hover {
+        background-color: white;
+        color: black; }
+    #main-content-flex #left-content #businesses {
+      display: flex;
+      flex-direction: row;
+      justify-content: true;
+      justify-content: space-evenly;
+      margin-top: auto; }
+  #main-content-flex #desktopHero {
+    height: 75vh; }
+  #main-content-flex #mobileHero {
+    display: none; }
 
 /*footer*/
 .attribution {

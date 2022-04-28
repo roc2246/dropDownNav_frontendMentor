@@ -1,13 +1,10 @@
-@mixin flex($direction, $justify-content: false, $column-gap: false) {
+@mixin flex($direction, $justify-content: false) {
   display: flex;
   flex-direction: $direction;
 
   @if $direction == row {
     justify-content: true;
     justify-content: $justify-content;
-  } @else if $direction == column {
-    column-gap: true;
-    column-gap: $column-gap;
   }
 }
 
@@ -18,10 +15,19 @@
   background-color: $bgcolor;
 }
 
+@mixin center-align ($coord) {
+  margin-left: $coord;
+  margin-right: $coord;
+}
+
+@mixin vertical-align ($coord) {
+  margin-top: $coord;
+  margin-bottom: $coord;
+}
+
 /*Whole content*/
 html {
-  margin-left: auto;
-  margin-right: auto;
+  @include center-align(auto);
   font-size: 112.5%;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -37,16 +43,12 @@ nav {
   margin: 1.5rem;
   @include flex(row);
 
-  svg {
-    z-index: 1;
-  }
-
   ul {
     list-style: none;
     margin-top: 0;
-    @include flex(row, space-between);
+    @include flex(row);
     li {
-      margin-left: 2.5rem;
+      @include center-align(1rem)
     }
   }
 
@@ -54,17 +56,15 @@ nav {
     .subnav {
       @include flex(column);
       @include border(white);
-      padding: 1rem;
       margin-top: 1rem;
+      padding: 0.5rem;
       position: absolute;
       z-index: 1;
-
-      svg {
-        margin-right: 0.25rem;
-      }
-
       li {
-        margin: 0.5rem;
+        @include vertical-align(0.75rem);
+        svg {
+          margin-right: 0.5rem;
+        }
       }
     }
   }
@@ -92,49 +92,44 @@ body {
 }
 
 #main-content-flex {
-  margin-top: 5rem;
+  margin-top: 2rem;
   @include flex(row, space-evenly);
-}
+  #left-content {
+    @include flex(column);
+    h1 {
+      font-size: 5rem;
+    }
 
-#left-content {
-  @include flex(column, 0.625rem);
-}
+    #blurb {
+      width: 25rem;
+    }
 
-h1 {
-  font-size: 5rem;
-}
+    button {
+      width: 12.5rem;
+      height: 3.125rem;
+      @include border(black);
+      color: white;
+      margin-top: 3rem;
+      font-weight: bolder;
 
-#blurb {
-  width: 25rem;
-}
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
 
-button {
-  width: 12.5rem;
-  height: 3.125rem;
-  border-radius: 0.75rem;
-  background-color: black;
-  color: white;
-  margin-top: 1.875rem;
-  font-weight: bolder;
-}
+    #businesses {
+      @include flex(row, space-evenly);
+      margin-top: auto;
+    }
+  }
+  #desktopHero {
+    height: 75vh;
+  }
 
-button:hover {
-  background-color: white;
-  color: black;
-}
-
-#businesses {
-  @include flex(row, space-evenly);
-  margin-top: 2.625rem;
-}
-
-#desktopHero {
-  width: 30%;
-  height: auto;
-}
-
-#mobileHero {
-  display: none;
+  #mobileHero {
+    display: none;
+  }
 }
 
 /*footer*/
