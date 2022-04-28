@@ -37,8 +37,14 @@ nav {
     border-width: thin;
     border-radius: 0.75rem;
     background-color: white;
+    padding: 1rem;
+    margin-top: 1rem;
     position: absolute;
     z-index: 1; }
+    nav #main-nav .subnav svg {
+      margin-right: 0.25rem; }
+    nav #main-nav .subnav li {
+      margin: 0.5rem; }
   nav #login-sect {
     margin-left: auto; }
     nav #login-sect #register {
@@ -49,8 +55,8 @@ nav {
       text-align: center;
       width: 6rem;
       height: 2rem;
-      padding-top: .75rem;
-      margin-top: -.75rem; }
+      padding-top: 0.75rem;
+      margin-top: -0.75rem; }
   nav #mobile-nav {
     display: none; }
 

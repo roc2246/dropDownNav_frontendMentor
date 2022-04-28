@@ -37,38 +37,48 @@ nav {
   margin: 1.5rem;
   @include flex(row);
 
-  svg{
-      z-index: 1;
+  svg {
+    z-index: 1;
   }
 
   ul {
     list-style: none;
     margin-top: 0;
     @include flex(row, space-between);
-    li{
-        margin-left: 2.5rem;
+    li {
+      margin-left: 2.5rem;
     }
   }
 
   #main-nav {
     .subnav {
-      @include flex(column, 0.5rem);
+      @include flex(column);
       @include border(white);
+      padding: 1rem;
+      margin-top: 1rem;
       position: absolute;
       z-index: 1;
+
+      svg {
+        margin-right: 0.25rem;
+      }
+
+      li {
+        margin: 0.5rem;
+      }
     }
   }
 
   #login-sect {
-      margin-left: auto;
-      #register {
-        @include border(white);
-        text-align: center;
-        width: 6rem;
-        height: 2rem;
-        padding-top: .75rem;
-        margin-top: -.75rem;
-      }
+    margin-left: auto;
+    #register {
+      @include border(white);
+      text-align: center;
+      width: 6rem;
+      height: 2rem;
+      padding-top: 0.75rem;
+      margin-top: -0.75rem;
+    }
   }
 
   #mobile-nav {
