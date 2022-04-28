@@ -2,31 +2,22 @@
 html {
   margin-left: auto;
   margin-right: auto;
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  font-size: 112.5%;
+  font-family: Arial, Helvetica, sans-serif; }
 
 li,
 button {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 /*Navigation*/
 nav {
-  margin: 20px;
-  user-select: none;
-}
+  margin: 1.25rem;
+  user-select: none; }
 
 #main-nav {
   list-style: none;
   display: flex;
-  flex-direction: row;
-}
-
-#site-logo {
-  display: inline-block;
-  margin: auto;
-}
+  flex-direction: row; }
 
 .subnav {
   list-style: none;
@@ -34,115 +25,91 @@ nav {
   flex-direction: column;
   position: absolute;
   z-index: 1;
-
   border: outset;
   border-width: thin;
-  border-radius: 12px;
+  border-radius: .75rem;
   background-color: white;
-
-  margin-top: 20px;
-
-  padding: 10px 20px 10px 5px;
-}
+  margin-top: 1.25rem;
+  padding: .625rem 1.25rem .625rem .313px; }
 
 li > svg {
-  margin-right: 15px;
-}
+  margin-right: 1rem; }
 
 .subnav > li {
-  margin: 20px;
-  padding-left: -20px;
-}
+  margin: 1.25rem;
+  padding-left: -1.25rem; }
 
 li {
-  margin-left: 40px;
-}
+  margin-left: 2.5rem; }
 
 #login-sect {
   margin-left: auto;
   display: flex;
-  align-items: row;
-}
+  align-items: row; }
 
 #login-sect > li:nth-child(2) {
   border: solid;
   border-style: outset;
-  border-radius: 12px;
-  width: 100px;
-  height: 25px;
-  padding: 8px 0;
-  margin-top: -10px;
-  text-align: center;
-}
+  border-radius: .75rem;
+  width: 6.25rem;
+  height: 1.563rem;
+  padding: .5rem 0;
+  margin-top: -.625rem;
+  text-align: center; }
 
 #mobile-nav {
-  display: none;
-}
+  display: none; }
 
 /*Main Content*/
 body {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 #main-content-flex {
-  margin-top: 80px;
+  margin-top: 5rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-}
+  justify-content: space-evenly; }
 
 #left-content {
   display: flex;
   flex-direction: column;
-  column-gap: 10px;
-
-}
+  column-gap: .625rem; }
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 80px;
-}
+  font-size: 5rem; }
 
 #blurb {
-  width: 400px;
-}
+  width: 25rem; }
 
 button {
-  width: 140px;
-  height: 50px;
-  border-radius: 12px;
+  width: 12.5rem;
+  height: 3.125rem;
+  border-radius: .75rem;
   background-color: black;
   color: white;
-  margin-top: 30px;
-  font-weight: bolder;
-}
+  margin-top: 1.875rem;
+  font-weight: bolder; }
 
 button:hover {
   background-color: white;
-  color: black;
-}
-
+  color: black; }
 
 #businesses {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 210px;
-}
+  margin-top: 2.625rem; }
 
 #desktopHero {
   width: 30%;
-  height: auto;
-}
+  height: auto; }
 
 #mobileHero {
-  display: none;
-}
+  display: none; }
 
 /*footer*/
 .attribution {
-  margin-top: 70px;
+  margin-top: 4.375rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-}
+  justify-content: center; }

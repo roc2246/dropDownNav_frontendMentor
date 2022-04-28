@@ -14,3 +14,11 @@ const hideSubOpts = (o) => {
   opt[o].style.display = "none";
   arrowIcon[o].setAttribute('d', 'm1 1 4 4 4-4');
 };
+
+
+//For Mobile Site
+const navigation = document.getElementById("mobile-nav").querySelector("ul")
+
+const displayHamburger = () => {
+  navigation.style.display = "flex";
+}
