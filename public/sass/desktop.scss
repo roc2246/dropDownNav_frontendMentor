@@ -59,6 +59,7 @@ nav {
       margin-top: 1rem;
       padding: 0.5rem;
       position: absolute;
+  /*     right: 35rem; */
       z-index: 1;
       li {
         @include vertical-align(0.75rem);

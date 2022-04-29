@@ -37,6 +37,7 @@ nav {
     margin-top: 1rem;
     padding: 0.5rem;
     position: absolute;
+    /*     right: 35rem; */
     z-index: 1; }
     nav #main-nav .subnav li {
       margin-top: 0.75rem;

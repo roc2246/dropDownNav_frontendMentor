@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "compile:sass-desktop": "node-sass sass/desktop.scss ./public/css/desktop-style.css -w",
-    "compile:sass-mobile": "node-sass sass/mobile.scss ./public/css/mobile-style.css -w"
+    "compile:sass-desktop": "node-sass public/sass/desktop.scss public/css/desktop-style.css -w",
+    "compile:sass-mobile": "node-sass public/sass/mobile.scss public/css/mobile-style.css -w"
   },
   "keywords": [],
   "author": "",
