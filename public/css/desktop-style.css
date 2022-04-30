@@ -26,7 +26,8 @@ nav {
     justify-content: false; }
     nav ul li {
       margin-left: 1rem;
-      margin-right: 1rem; }
+      margin-right: 1rem;
+      padding-bottom: 1rem; }
   nav #main-nav .subnav {
     display: flex;
     flex-direction: column;
@@ -37,11 +38,11 @@ nav {
     margin-top: 1rem;
     padding: 0.5rem;
     position: absolute;
-    /*     right: 35rem; */
     z-index: 1; }
     nav #main-nav .subnav li {
       margin-top: 0.75rem;
-      margin-bottom: 0.75rem; }
+      margin-bottom: 0.75rem;
+      padding-bottom: 0rem; }
       nav #main-nav .subnav li svg {
         margin-right: 0.5rem; }
   nav #login-sect {
@@ -56,6 +57,8 @@ nav {
       height: 2rem;
       padding-top: 0.75rem;
       margin-top: -0.75rem; }
+    nav #login-sect li {
+      padding-bottom: 0rem; }
   nav #mobile-nav {
     display: none; }
 

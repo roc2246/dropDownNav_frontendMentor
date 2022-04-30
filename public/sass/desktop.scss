@@ -48,7 +48,8 @@ nav {
     margin-top: 0;
     @include flex(row);
     li {
-      @include center-align(1rem)
+      @include center-align(1rem);
+      padding-bottom: 1rem
     }
   }
 
@@ -59,10 +60,10 @@ nav {
       margin-top: 1rem;
       padding: 0.5rem;
       position: absolute;
-  /*     right: 35rem; */
       z-index: 1;
       li {
         @include vertical-align(0.75rem);
+        padding-bottom: 0rem;
         svg {
           margin-right: 0.5rem;
         }
@@ -79,6 +80,9 @@ nav {
       height: 2rem;
       padding-top: 0.75rem;
       margin-top: -0.75rem;
+    }
+    li{
+      padding-bottom: 0rem;
     }
   }
 
