@@ -28,10 +28,12 @@ const displayHamburger = () => {
   navigation.style.display = "flex";
   hamburgerIcon.style.display = "none";
   closeMobile.style.display = "block";
+  document.querySelector("html").style.backgroundColor = "rgba(0,0,0,0.4)";
 };
 
 const hideHamburger = () => {
   navigation.style.display = "none";
   hamburgerIcon.style.display = "inline";
   closeMobile.style.display = "none";
+  document.querySelector("html").style.backgroundColor = null;
 };

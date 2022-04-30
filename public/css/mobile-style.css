@@ -22,7 +22,6 @@
         font-size: 2rem;
         position: relative; }
       nav #mobile-nav ul {
-        border-left: outset;
         z-index: 1;
         display: none;
         flex-direction: column;
@@ -33,7 +32,7 @@
         bottom: -1rem;
         background-color: white;
         width: 50vw;
-        height: 92vh;
+        height: 93vh;
         z-index: 1; }
         nav #mobile-nav ul li {
           padding: 1rem; }
