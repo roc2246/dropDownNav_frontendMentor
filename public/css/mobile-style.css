@@ -13,6 +13,8 @@
     nav #mobile-nav {
       display: block;
       margin-left: auto; }
+      nav #mobile-nav #mobileClose {
+        display: none; }
       nav #mobile-nav ul {
         display: none;
         flex-direction: column;

@@ -18,7 +18,17 @@ const hideSubOpts = (o) => {
 
 //For Mobile Site
 const navigation = document.getElementById("mobile-nav").querySelector("ul")
+const hamburgerIcon = document.getElementById("mobile-nav").querySelector("svg")
+const closeMobile = document.getElementById("mobileClose")
 
 const displayHamburger = () => {
   navigation.style.display = "flex";
+  hamburgerIcon.style.display = "none";
+  closeMobile.style.display="block";
+}
+
+const hideHamburger = () => {
+  navigation.style.display = "none";
+  hamburgerIcon.style.display = "inline";
+  closeMobile.style.display="none";
 }
