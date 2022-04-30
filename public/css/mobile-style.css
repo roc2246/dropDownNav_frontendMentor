@@ -19,26 +19,27 @@
       nav #mobile-nav #mobileClose {
         display: none;
         z-index: 2;
+        font-size: 2rem;
         position: relative; }
       nav #mobile-nav ul {
-        border: solid;
         z-index: 1;
         display: none;
         flex-direction: column;
         position: absolute;
         padding-left: 0;
-        padding-top: 1rem;
-        margin-top: 0rem;
+        padding-top: 4.25rem;
         right: 0rem;
         bottom: -1rem;
         background-color: white;
         width: 50vw;
-        height: 97.5vh;
+        height: 92vh;
         z-index: 1; }
         nav #mobile-nav ul li {
           padding: 1rem; }
         nav #mobile-nav ul .subnav {
-          position: relative; }
+          padding-top: 0;
+          position: relative;
+          height: auto; }
   /*Main Content*/
   #main-content-flex {
     display: flex;
