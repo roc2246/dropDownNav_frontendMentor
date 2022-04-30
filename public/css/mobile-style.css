@@ -22,6 +22,7 @@
         font-size: 2rem;
         position: relative; }
       nav #mobile-nav ul {
+        border-left: outset;
         z-index: 1;
         display: none;
         flex-direction: column;
@@ -37,6 +38,7 @@
         nav #mobile-nav ul li {
           padding: 1rem; }
         nav #mobile-nav ul .subnav {
+          border-left: none;
           padding-top: 0;
           position: relative;
           height: auto; }
@@ -64,7 +66,12 @@
       #main-content-flex #left-content button {
         margin-top: 1px; }
       #main-content-flex #left-content #businesses {
-        margin-top: 4rem; }
+        margin-top: 4rem;
+        width: 22.5rem; }
+        #main-content-flex #left-content #businesses svg {
+          transform: scale(0.75);
+          margin: 0;
+          overflow: visible; }
   #desktopHero {
     display: none; }
   /*Footer*/

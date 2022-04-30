@@ -8,7 +8,6 @@ Object.keys(opt).forEach((option) => {
 const displaySubOpts = (o) => {
   opt[o].style.display = "block";
   arrowIcon[o].setAttribute("d", "m1 5 4-4 4 4");
-
   opt[o].parentElement.setAttribute("ontouchstart", "hideSubOpts(" + o + ")");
 };
 

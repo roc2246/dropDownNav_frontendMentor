@@ -17,6 +17,8 @@ nav {
   flex-direction: row;
   justify-content: true;
   justify-content: false; }
+  nav svg {
+    overflow: visible; }
   nav ul {
     list-style: none;
     margin-top: 0;

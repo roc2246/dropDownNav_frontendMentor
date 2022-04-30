@@ -43,6 +43,10 @@ nav {
   margin: 1.5rem;
   @include flex(row);
 
+  svg{
+    overflow: visible;
+  }
+
   ul {
     list-style: none;
     margin-top: 0;
